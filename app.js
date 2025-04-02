@@ -108,3 +108,77 @@ function greetUser(name, time) {
 
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 console.log('Exercise 5 Result:', greetUser("Jed", "evening"));
+
+/*
+Exercise 6: maxOfThree()
+
+Define a function, maxOfThree. It should accept three numbers 
+and return the largest among them.
+
+Example: maxOfThree(17, 4, 9) should return 17.
+
+Complete the exercise in the space below:
+*/
+
+function maxOfThree(a, b, c) {
+    if (a >= b && a >= c) {
+        return a;
+     } if (b >= a && b >= c) {
+        return b;
+    } else {
+        return c;
+    }
+}
+
+
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+console.log('Exercise 6 Result:', maxOfThree(12, 10, 8));
+console.log('Exercise 6 Result:', maxOfThree(2, 10, 9000));
+
+/*
+Exercise 7: calculateTip()
+
+Create a function called calculateTip. It should take two arguments: 
+the bill amount and the tip percentage (as a whole number). 
+The function should return the amount of the tip.
+
+Example: calculateTip(50, 20) should return 10.
+
+Complete the exercise in the space below:
+*/
+
+function calculateTip(bill,tPercent) {
+    return tPercent = (tPercent/100) * bill; 
+}
+
+console.log('Exercise 7 Result:', calculateTip(50, 20));
+console.log('Exercise 7 Result:', calculateTip(50, 10));
+console.log('Exercise 7 Result:', calculateTip(100, 30));
+
+/*
+Exercise 8: convertTemperature()
+
+Write a function named convertTemperature. 
+It takes two arguments: a temperature and a string representing the 
+scale ('C' for Celsius, 'F' for Fahrenheit). 
+Convert the temperature to the other scale.
+
+Example: convertTemperature(32, 'C') should return 89.6 (Fahrenheit).
+Example: convertTemperature(32, 'F') should return 0 (Celsius).
+
+Complete the exercise in the space below:
+*/
+
+function convertTemperature(temp, scale) {
+    if (scale === "F") {
+    return ((temp - 32) * 5)/9;
+} else if 
+    (scale === "C") {
+        return (temp * 9/5) + 32;
+    }
+}
+
+
+console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+console.log('Exercise 8 Result:', convertTemperature(97, "F"));
+console.log('Exercise 8 Result:', convertTemperature(32, "F"));
