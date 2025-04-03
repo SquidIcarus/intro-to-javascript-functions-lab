@@ -215,3 +215,87 @@ console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "add"));
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "multiply"));
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "divide"));
+
+/*
+Exercise 10: calculateGrade()
+
+Define a function called calculateGrade. 
+It should take a numerical score and return the corresponding letter 
+grade (A, B, C, D, F). 
+
+For example, 90 and above yields an 'A', 80-89 is a 'B', 
+and 70-79 is a 'C', 60-69 is a 'D' and anything lower than a 60 is an 'F'.
+
+Example: calculateGrade(100) should return A.
+
+Complete the exercise in the space below:
+*/
+
+function calculateGrade(score) {
+    if (score >= 90)
+        return "A";
+    if (score < 90 && score >= 80)
+        return "B";
+    if (score < 80 && score >= 70) 
+        return "C";
+    if (score < 70 && score >= 60)
+        return "D";
+    if (score < 60)
+        return "F"
+}
+
+
+console.log('Exercise 10 Result:', calculateGrade(85));
+console.log('Exercise 10 Result:', calculateGrade(90));
+console.log('Exercise 10 Result:', calculateGrade(72));
+console.log('Exercise 10 Result:', calculateGrade(62));
+console.log('Exercise 10 Result:', calculateGrade(42));
+
+/*
+Exercise 11: createUsername()
+
+Define a function called createUsername. 
+It should take a first name and a last name and return a username. 
+
+The username should be a combination of the following:
+- The first three letters of the first name.
+- The first three letters of the last name.
+- The total character count of the first and last name combined.
+
+Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
+
+Complete the exercise in the space below:
+*/
+
+function createUsername(first, last) {
+    let firstThree = first.slice(0, 3);
+    let lastThree = last.slice(0, 3);
+    let charToString = `${first}${last}`;
+    return `${firstThree}${lastThree}${charToString.length}`;
+}
+
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+console.log('Exercise 11 Result:', createUsername("Landon", "Isaiah"));
+console.log('Exercise 11 Result:', createUsername("Vernon", "Burmingham"));
+
+/*
+Exercise 12: numArgs()
+
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+
+function numArgs() {
+    return arguments.length;
+}
+
+
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
+console.log('Exercise 12 Result:', numArgs("me", "you", "everyone else"));
+console.log('Exercise 12 Result:', numArgs(true, false, false, true, false, false, true));
+console.log('Exercise 12 Result:', numArgs("just the one"));
+
+//I knew that a specific method was needed to write this function, upon searching, the answer was right there. felt like cheating... 
+// so simple, but i wouldnt have known that this method was available without searching.
