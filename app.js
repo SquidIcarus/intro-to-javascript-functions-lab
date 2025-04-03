@@ -297,5 +297,8 @@ console.log('Exercise 12 Result:', numArgs("me", "you", "everyone else"));
 console.log('Exercise 12 Result:', numArgs(true, false, false, true, false, false, true));
 console.log('Exercise 12 Result:', numArgs("just the one"));
 
-//I knew that a specific method was needed to write this function, upon searching, the answer was right there. felt like cheating... 
-// so simple, but i wouldnt have known that this method was available without searching.
+/* I knew that a specific method was needed to write this function. Upon searching, the answer was right there! felt like cheating... 
+so simple, but i wouldnt have known that this property(not a method)... existed. When I'm tyring to troubleshoot my issues with coding, 
+syntax, debugging, etc.. I try to do so in a way that doesnt give me the direct answer so that I understand exactly what the issue is.
+This one just fell right into my lap.
+*/
